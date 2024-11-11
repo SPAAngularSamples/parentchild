@@ -1,0 +1,16 @@
+<p>home works!</p>
+
+<h2>My Documents</h2>
+
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Open</th>   
+    </tr>
+    <tr *ngFor="let document of Documents">
+        <td>{{document.id}}</td>
+        <td>{{document.name}}</td>
+        <td><a href="/child/{{document.id}}" target="_blank">Open</a></td>
+    </tr>
+</table>
